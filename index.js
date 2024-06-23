@@ -12,7 +12,7 @@ app.use(morgan("tiny"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => res.status(200).json({ status: "Everything is fine." }));
+app.get("/", (req, res) => res.status(200).json({ status: "Everything is fine. Test One" }));
 
 /**
  * 👋 Want to use mongodb ? Uncomment below lines
@@ -22,6 +22,4 @@ app.get("/", (req, res) => res.status(200).json({ status: "Everything is fine." 
 
 */
 
-server.listen(PORT, (err) =>
-  !err ? console.log(`✔ Node Listening to http://localhost:${PORT}`) : console.log("There was some error ", err.message)
-);
+server.listen(PORT, (err) => (!err ? console.log(`✔ Node Listening to http://localhost:${PORT}`) : console.log("There was some error ", err.message)));
