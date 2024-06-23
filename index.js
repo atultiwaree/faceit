@@ -12,7 +12,7 @@ app.use(morgan("tiny"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => res.status(200).json({ status: "Everything is fine. Test One" }));
+app.get("/", (req, res) => res.status(200).json({ status: "Everything is fine. Test Two" }));
 
 /**
  * 👋 Want to use mongodb ? Uncomment below lines
